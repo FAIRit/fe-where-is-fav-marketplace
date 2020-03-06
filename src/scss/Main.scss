@@ -1,0 +1,16 @@
+@import "colors.scss";
+@import "font.scss";
+@import "Start";
+@import "Trojmiasto_Warszawa";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $base_font;
+  color: white;
+
+}
+
+
