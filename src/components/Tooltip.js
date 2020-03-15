@@ -12,10 +12,9 @@ export default class Tooltip extends Component {
                     <h3 className="tooltip_name">{market.name}</h3>
                     <h4 className='tooltip_tip'>{market.haslo}</h4>
                     <h4 className='tooltip_adres'>{market.adres}</h4>
-                    <NavLink to={`/block/${block_name.toLowerCase()}/${market.id}`}>Zobacz szczegóły</NavLink>
+                    <NavLink to={`/warszawa/${block_name.toLowerCase()}/${market.id}`}>Zobacz szczegóły</NavLink>
                 </>
             </HashRouter>
         )
     }
-
 }
