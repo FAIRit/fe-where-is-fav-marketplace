@@ -1,5 +1,7 @@
 export default [
+
     {
+        city: "WARSZAWA",
         name: 'OCHOTA',
         markets: [
             {
@@ -33,6 +35,7 @@ export default [
         ]
     },
     {
+        city: "WARSZAWA",
         name: 'WOLA',
         markets: [
             {
@@ -65,6 +68,7 @@ export default [
         ]
     },
     {
+        city: "WARSZAWA",
         name: 'MOKOTOW',
         markets: [
             {
@@ -98,6 +102,7 @@ export default [
         ]
     },
     {
+        city: "WARSZAWA",
         name: 'PRAGA',
         markets: [
             {

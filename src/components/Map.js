@@ -1,20 +1,43 @@
-import React from "react";
+import React, {Component} from "react";
 import { Map as LeafletMap, TileLayer, Marker, Popup } from 'react-leaflet';
-import data from "../data/data";
+import Tooltip from "./Tooltip";
 import L from 'leaflet'
 
+export const pointerIcon = new L.Icon({
+    iconUrl: './assets/parsley.svg',
+    iconSize: [100, 100],
+});
 
-const position = [51.505, -0.09]
-const map = (
-    <LeafletMap center={position} zoom={13}>
-        <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
-        />
-        <Marker position={position}>
-            <Popup>A pretty CSS3 popup.<br />Easily customizable.</Popup>
-        </Marker>
-    </LeafletMap>
-)
+export default class Map extends Component {
 
-render(map, document.getElementById('map-container'))
+    render() {
+        const {data: block} = this.props;
+        const centerL = block.markets.reduce( (p, c) =>  p+parseFloat(c.lalt),0) / block.markets.length;
+        const centerH = block.markets.reduce( (p, c) =>  p+parseFloat(c.halt),0) / block.markets.length;
+
+        return (
+
+
+            <LeafletMap
+                center={[centerL, centerH]}
+                zoom={12}
+                // maxZoom={20}
+            >
+                <TileLayer
+                    url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
+                />
+                {block.markets.map( el =>
+
+                    <Marker position={[el.lalt, el.halt]} key={el.name}
+                            icon={pointerIcon}>
+                        <Popup>
+                            <Tooltip item={el} block_name={block.name}/>
+                        </Popup>
+                    </Marker>
+                )}
+            </LeafletMap>
+        );
+    }
+}
+
+

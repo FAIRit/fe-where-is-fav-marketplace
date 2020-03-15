@@ -1,7 +1,8 @@
 @import "colors.scss";
 @import "font.scss";
 @import "Start";
-@import "Trojmiasto_Warszawa";
+@import "City";
+@import "Header";
 
 
 * {
@@ -10,7 +11,6 @@
   box-sizing: border-box;
   font-family: $base_font;
   color: white;
-
 }
 
 

@@ -9,20 +9,20 @@
   height: 100vh;
   position: absolute;
 
-  .icon {
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    border: 1px solid white;
-    background: #fff7f7;
-    box-shadow: 2px -2px 3px $dark_green;
-    background-image: url("../assets/farmer.svg");
-    background-size: 90%;
-    background-position: center;
-    position: relative;
-    left: 40%;
-    bottom: 35px;
-  }
+  //.icon {
+  //  border-radius: 50%;
+  //  width: 70px;
+  //  height: 70px;
+  //  border: 1px solid white;
+  //  background: #fff7f7;
+  //  box-shadow: 2px -2px 3px $dark_green;
+  //  background-image: url("../assets/farmer.svg");
+  //  background-size: 90%;
+  //  background-position: center;
+  //  position: relative;
+  //  left: 40%;
+  //  bottom: 35px;
+  //}
 }
 
 .name_bar {
@@ -66,7 +66,6 @@
   }
 }
 
-
 .enter_btn {
   text-decoration: none;
   font-size: 40px;
@@ -81,13 +80,6 @@
   align-items: center;
   justify-content: center;
   margin-top: 30px;
-
-  &:hover {
-    transition: 4s;
-    color: $light_green;
-    transform: scale(0); //??
-  }
-
 }
 
 
