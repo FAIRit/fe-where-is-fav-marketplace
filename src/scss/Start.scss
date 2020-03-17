@@ -1,31 +1,16 @@
 
 // HEADER //
 
-.start_container {
+.start-container {
   padding: 0;
   margin: 0;
   background: $light_green;
   width: 100%;
   height: 100vh;
   position: absolute;
-
-  //.icon {
-  //  border-radius: 50%;
-  //  width: 70px;
-  //  height: 70px;
-  //  border: 1px solid white;
-  //  background: #fff7f7;
-  //  box-shadow: 2px -2px 3px $dark_green;
-  //  background-image: url("../assets/farmer.svg");
-  //  background-size: 90%;
-  //  background-position: center;
-  //  position: relative;
-  //  left: 40%;
-  //  bottom: 35px;
-  //}
 }
 
-.name_bar {
+.name-bar {
   display: flex;
   justify-content: center;
   background-color: #81B697;
@@ -42,7 +27,7 @@
 
 // CONTENT //
 
-.which_city {
+.which-city {
   padding-top: 30px;
   width: 100%;
   display: flex;
@@ -51,7 +36,7 @@
   align-items: center;
 }
 
-.start_question {
+.start-question {
   width: 80%;
   height: 60px;
   background-color: #81B697;
@@ -66,7 +51,7 @@
   }
 }
 
-.enter_btn {
+.enter-btn {
   text-decoration: none;
   font-size: 40px;
   font-weight: bolder;

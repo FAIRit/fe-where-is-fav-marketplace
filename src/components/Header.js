@@ -26,8 +26,8 @@ export default class Header extends Component {
 
 
         return (
-            <div className="market_box">
-                <div className='market_name'>{this.state.block.name}</div>
+            <div className="market-box">
+                <div className='market-name'>{this.state.block.name}</div>
             </div>
         )
     }
