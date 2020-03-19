@@ -6,9 +6,9 @@ export default class Block extends Component {
 
     render() {
         const {blocks} = this.props;
-
-        const {name} = this.props.match.params;
+        const {name, city} = this.props.match.params;
         const block_name = blocks.filter( el => el.name.toLowerCase() === name.toLowerCase());
+
         if(!block_name[0]){
             return <h1>Nie znaleziono dzielnicy</h1>
         }
@@ -16,7 +16,8 @@ export default class Block extends Component {
         return (
             <>
                 <Header blocks={blocks} blockShortcut={name}/>
-                <Map data={block_name[0]}/>
+                <Map city={city} block={block_name}/>
+
             </>
         )
     }

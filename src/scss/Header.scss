@@ -1,7 +1,7 @@
 .market-box {
   display: flex;
   justify-content: center;
-  background-color: #81B697;
+  background-color: $dark_green;
 
   .market-name {
     font-family: $base_font;
@@ -9,5 +9,6 @@
     align-self: center;
     margin-top: 15px;
     margin-bottom: 40px;
+    color: $neon_green;
   }
 }

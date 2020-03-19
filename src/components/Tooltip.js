@@ -4,7 +4,13 @@ import {HashRouter, NavLink} from "react-router-dom";
 export default class Tooltip extends Component {
 
     render() {
-        const {item: market, block_name} = this.props;
+
+        const {market, blockName, city} = this.props;
+
+        const activeStyle = {
+            color: "#11248d",
+            fontSize: "14px"
+        };
 
         return (
             <HashRouter>
@@ -13,8 +19,14 @@ export default class Tooltip extends Component {
                     <h4 className='tooltip-tip'>{market.haslo}</h4>
                     <h4 className='tooltip-address'>{market.adres}</h4>
                     <NavLink to={`/warszawa/${block_name.toLowerCase()}/${market.id}`}>Zobacz szczegóły</NavLink>
-                </>
+                        =======
+                    <NavLink style={activeStyle}
+                             to={`/${city}/${blockName.toLowerCase()}/${market.id}`}>Zobacz szczegóły
+                    </NavLink>
+
+                    </>
             </HashRouter>
         )
     }
 }
+

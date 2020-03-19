@@ -1,0 +1,33 @@
+
+.details-market {
+  font-family: 'Roboto Condensed', sans-serif;
+  background: white;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #204969;
+  box-shadow: 2px -2px 3px #888888;
+  border-radius: 5%;
+}
+
+.name-market {
+  font-family: 'Bebas Neue', cursive;
+  color: #204969;
+  font-size: 40px;
+  padding: 10px;
+  margin: 15px;
+  border: 1px solid #204969;
+}
+
+.haslo-market{
+  font-family: 'Bebas Neue', cursive;
+  color: #204969;
+  font-size: 25px;
+}
+
+
+.article-details {
+  padding: 10px;
+}
