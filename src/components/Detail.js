@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-const imageUrl = "images/peter-wendt--r5KSMkyoSc-unsplash.jpg";
+// const imageUrl = "images/peter-wendt--r5KSMkyoSc-unsplash.jpg";
 
 export default class Details extends Component {
 
@@ -10,15 +10,13 @@ export default class Details extends Component {
 
         const block = blocks.filter(block => block.name.toLowerCase() === name.toLowerCase())[0];
         console.log(block);
-        const market_details = block.markets.filter(market => market.id == id)[0];
+        const market_details = block.markets.filter(market => market.id = id)[0];
 
         console.log(market_details);
         console.log(city);
 
         return (
             <>
-                <img src={imageUrl}/>
-
                 <div className='details-market' key={market_details.id}>
 
                     <h2 className="name-market">{market_details.name}</h2>
