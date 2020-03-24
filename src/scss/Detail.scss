@@ -1,33 +1,40 @@
 
-.details-market {
-  font-family: 'Roboto Condensed', sans-serif;
-  background: white;
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #204969;
-  box-shadow: 2px -2px 3px #888888;
-  border-radius: 5%;
-}
+  .details-market {
+    font-family: $base_font;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
 .name-market {
-  font-family: 'Bebas Neue', cursive;
-  color: #204969;
-  font-size: 40px;
-  padding: 10px;
-  margin: 15px;
-  border: 1px solid #204969;
+  font-family: $base_font;
+  color: $neon_green;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.haslo-market{
-  font-family: 'Bebas Neue', cursive;
-  color: #204969;
+.haslo-market {
+  font-family: $base_font;
+  color: $neon_green;
   font-size: 25px;
 }
 
 
 .article-details {
-  padding: 10px;
+
+  .des-market, .whatbuy, .transport {
+    color: $dark_green;
+    font-size: 20px;
+    font-family: $base_font;
+
+    span {
+      font-weight: bold;
+      color: $dark_green;
+      font-size: 25px;
+    }
+
+  }
 }

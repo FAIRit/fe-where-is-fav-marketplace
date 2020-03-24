@@ -14,7 +14,7 @@ function App() {
         <HashRouter>
             <>
                 <Route exact path="/" component={Start}/>
-                <Route path="/:city" component={City}/>
+                <Route exact path="/:city" component={City}/>
                 <Route exact path="/:city/:name" render={props => <Block {...props} blocks={blocks}/>}/>
                 <Route exact path="/:city/:name/:id" render={props => <Detail {...props} blocks={blocks}/>}/>
                 {/* <Route component={NotFound}/>*/}
