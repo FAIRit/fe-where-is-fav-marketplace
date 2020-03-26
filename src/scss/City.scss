@@ -1,4 +1,4 @@
-.which_district {
+.which-district {
   padding-top: 30px;
   width: 100%;
   display: flex;
@@ -11,4 +11,14 @@
   }
 }
 
+.name-app {
+  color: $neon_green;
+}
 
+.start-question {
+  background-color: $dark_green;
+
+  h2 {
+    color: rgba(176, 255, 71, 0.85);
+  }
+}

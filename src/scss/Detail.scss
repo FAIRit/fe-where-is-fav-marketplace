@@ -1,0 +1,40 @@
+
+  .details-market {
+    font-family: $base_font;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.name-market {
+  font-family: $base_font;
+  color: $neon_green;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.haslo-market {
+  font-family: $base_font;
+  color: $neon_green;
+  font-size: 25px;
+}
+
+
+.article-details {
+
+  .des-market, .whatbuy, .transport {
+    color: $dark_green;
+    font-size: 20px;
+    font-family: $base_font;
+
+    span {
+      font-weight: bold;
+      color: $dark_green;
+      font-size: 25px;
+    }
+
+  }
+}

@@ -1,0 +1,35 @@
+.leaflet-popup-content-wrapper {
+  background: white;
+}
+
+.tooltip-name {
+  font-family: 'Bebas Neue', cursive;
+  color: #204969;
+  font-size: 20px;
+}
+
+.tooltip-tip {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
+}
+
+.tooltip-name {
+  font-family: $text_font;
+  color: $neon_green;
+  font-size: 25px;
+}
+
+.tooltip-tip {
+  color: $neon_green;
+  font-family: $text_font;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.tooltip-address {
+  font-family: $text_font;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #11248d;
+}
+
