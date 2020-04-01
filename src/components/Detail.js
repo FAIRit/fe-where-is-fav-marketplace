@@ -1,19 +1,17 @@
-import React, {Component} from "react";
+import React, { useEffect, useState } from "react";
+import { getMarket } from "../components/Firebase/fetchData";
 
 // const imageUrl = "images/peter-wendt--r5KSMkyoSc-unsplash.jpg";
 
-export default class Details extends Component {
+const Details = () => {
 
-    render() {
+    const [data, setData] = useState([]);
+    const fetchMarket = () => getMarket().then(data => setData(data));
+
         const {blocks} = this.props;
-        const {city, name, id} = this.props.match.params;
-
-        const block = blocks.filter(block => block.name.toLowerCase() === name.toLowerCase())[0];
-        console.log(block);
-        const market_details = block.markets.filter(market => market.id = id)[0];
-
-        console.log(market_details);
-        console.log(city);
+        const {name, id} = this.props.match.params;
+        const block = blocks.find(block => block.name.toLowerCase() === name.toLowerCase());
+        const market_details = block.markets.find(market => market.id = id);
 
         return (
             <>
@@ -35,5 +33,7 @@ export default class Details extends Component {
                 </div>
             </>
         )
-    }
+
 }
+
+export default Details();
