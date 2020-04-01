@@ -8,10 +8,15 @@ const Details = () => {
     const [data, setData] = useState([]);
     const fetchMarket = () => getMarket().then(data => setData(data));
 
+
         const {blocks} = this.props;
         const {name, id} = this.props.match.params;
         const block = blocks.find(block => block.name.toLowerCase() === name.toLowerCase());
         const market_details = block.markets.find(market => market.id = id);
+
+    useEffect(() => {
+        fetchMarket();
+    }, []);
 
         return (
             <>
