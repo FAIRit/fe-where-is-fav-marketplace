@@ -8,6 +8,8 @@ import Block from "./components/Block";
 import Detail from "./components/Detail";
 import blocks from "./data/data";
 
+import firebase from "./components/Firebase/Firebase";
+
 
 function App() {
     return (

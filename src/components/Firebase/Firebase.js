@@ -1,16 +1,18 @@
-import React from "react";
-import firebase from "firebase";
-import config from './config';
+import firebase from "firebase/app";
+import 'firebase/firestore'
 
-class Firebase extends React.Component {
-    constructor(props) {
-        super(props);
-        firebase.initializeApp(config);
 
-        this.state = {
-            markets: []
-        }
-    }
+const firebaseConfig = {
+    apiKey: "AIzaSyBRN246Bqaox5T5voYD0A1MKUVFu0T26oE",
+    authDomain: "detailsmarket-52617.firebaseapp.com",
+    databaseURL: "https://detailsmarket-52617.firebaseio.com",
+    projectId: "detailsmarket-52617",
+    storageBucket: "detailsmarket-52617.appspot.com",
+    messagingSenderId: "198192772491",
+    appId: "1:198192772491:web:756985ebf50de51caf2b8e",
+    measurementId: "G-Z4GKK4LRXS"
+};
 
-}
-export default Firebase;
+firebase.initializeApp(firebaseConfig);
+
+export default firebase;
