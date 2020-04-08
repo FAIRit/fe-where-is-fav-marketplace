@@ -4,6 +4,10 @@ import React, {Component} from "react";
 
 export default class Details extends Component {
 
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         const {blocks} = this.props;
         const {name, id} = this.props.match.params;
@@ -15,6 +19,8 @@ export default class Details extends Component {
                 <div className='details-market' key={marketDetails.id}>
                     <div className="name-bar">
                         <h1 className="name-market">{marketDetails.name}</h1>
+                        <button className="BackButton"
+                            onClick={this.props.history.goBack}>X</button>
                     </div>
                     <h4 className="haslo-market">{marketDetails.haslo}</h4>
 
