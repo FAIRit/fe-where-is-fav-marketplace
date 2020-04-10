@@ -8,21 +8,29 @@ import Block from "./components/Block";
 import Detail from "./components/Detail";
 import blocks from "./data/data";
 
-import firebase from "./components/Firebase/Firebase";
-
-
 function App() {
+
     return (
-        <HashRouter>
-            <>
-                <Route exact path="/" component={Start}/>
-                <Route exact path="/:city" component={City}/>
-                <Route exact path="/:city/:name" render={props => <Block {...props} blocks={blocks}/>}/>
-                <Route exact path="/:city/:name/:id" render={props => <Detail {...props} blocks={blocks}/>}/>
-                {/* <Route component={NotFound}/>*/}
-</>
-</HashRouter>
-);
+        <div>
+            <HashRouter>
+                <>
+                    <Route exact path="/" component={Start}/>
+                    <Route exact path="/:city" component={City}/>
+                    <Route
+                        exact
+                        path="/:city/:name"
+                        render={(props) => <Block {...props} blocks={blocks}/>}
+                    />
+                    <Route
+                        exact
+                        path="/:city/:name/:id"
+                        render={(props) => <Detail {...props} blocks={blocks}/>}
+                    />
+                    {/* <Route component={NotFound}/>*/}
+                </>
+            </HashRouter>
+        </div>
+    )
 }
 
 export default App;

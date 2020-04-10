@@ -1,5 +1,6 @@
-import React, {Component, useEffect, useState} from "react";
-import {getMarket} from "../components/Firebase/fetchData";
+import React, { Component} from "react";
+import PaginatedTable from "../components/testFb";
+
 
 // const imageUrl = "images/peter-wendt--r5KSMkyoSc-unsplash.jpg";
 
