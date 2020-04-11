@@ -1,5 +1,5 @@
 import React, { Component} from "react";
-import PaginatedTable from "../components/testFb";
+import GetData from "./Firebase/GetData";
 
 
 // const imageUrl = "images/peter-wendt--r5KSMkyoSc-unsplash.jpg";
@@ -15,6 +15,7 @@ export default class Details extends Component {
 
         return (
             <>
+                <GetData/>
                 <div className='details-market' key={marketDetails.id}>
                     <div className="name-bar">
                         <h1 className="name-market">{marketDetails.name}</h1>

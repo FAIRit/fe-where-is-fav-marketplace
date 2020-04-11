@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import firebase from '../components/Firebase/Firebase'
+import firebase from './FirebaseConfig'
 
 
 
@@ -17,7 +17,7 @@ function useData() {
     return data;
 }
 
-    const PaginatedTable = () => {
+    const GetData = () => {
     const data = useData();
 
     return (
@@ -34,4 +34,4 @@ function useData() {
             )}
 
 
-            export default PaginatedTable
+            export default GetData
