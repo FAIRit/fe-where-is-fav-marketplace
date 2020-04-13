@@ -18,9 +18,8 @@ function App() {
                 <>
                     <Route exact path="/" component={Start}/>
                     <Route exact path="/:city" component={City}/>
-                    <Route path path="/:city/:name" component={TestBlock} />
-                    {/*<Route exact path="/:city/:name"  render={(props) => <Block {...props} blocks={blocks}/>}*/}
-                    />
+                    {/*<Route path path="/:city/:name" component={TestBlock} />*/}
+                   <Route exact path="/:city/:name"  render={(props) => <Block {...props} blocks={blocks}/>} />
                     <Route exact path="/:city/:name/:id" component={Test} />
                        {/*render={(props) => <Detail {...props} blocks={blocks}/>}/>*/}
                     {/* <Route component={NotFound}/>*/}
