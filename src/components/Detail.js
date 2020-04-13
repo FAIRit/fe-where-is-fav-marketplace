@@ -15,7 +15,6 @@ export default class Details extends Component {
 
         return (
             <>
-                <GetData/>
                 <div className='details-market' key={marketDetails.id}>
                     <div className="name-bar">
                         <h1 className="name-market">{marketDetails.name}</h1>

@@ -15,7 +15,7 @@ export default class Map extends Component {
         const {block, city} = this.props;
         const centerL = block.markets.reduce((p, c) => p + parseFloat(c.lalt), 0) / block.markets.length;
         const centerH = block.markets.reduce((p, c) => p + parseFloat(c.halt), 0) / block.markets.length;
-
+console.log(block.markets);
         return (
 
 

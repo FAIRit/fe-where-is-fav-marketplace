@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import firebase from './FirebaseConfig'
+import React, { useEffect, useState} from "react";
+import firebase from '../components/Firebase/FirebaseConfig';
+
 
 function useData() {
     const [data, setData] = useState([]);
@@ -15,21 +16,21 @@ function useData() {
     return data;
 }
 
-    const GetData = () => {
-    const data = useData();
+function TestMap() {
+
+        const data = useData();
 
     return (
         <>
-                <div>{data.map(item => {
-                    console.log(item);
-                return<ol key={item.id}>
-                   <li>{item.city}</li>L
-                   <li>{item.name}</li>
+            <div className="testDiv">{data.map(item => {
+                return<ol className="testList" key={item.id}>
+                    <li>{item.city}</li>
+                    <li>{item.name}</li>
                     <li>{item.desription}</li>
                 </ol>
-                })} </div>
+            })} </div>
         </>
-            )}
+    );
+}
 
-
-            export default GetData
+export default TestMap
