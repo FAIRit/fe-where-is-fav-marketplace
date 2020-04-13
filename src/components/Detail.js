@@ -1,6 +1,4 @@
 import React, { Component} from "react";
-import GetData from "./Firebase/GetData";
-
 
 // const imageUrl = "images/peter-wendt--r5KSMkyoSc-unsplash.jpg";
 

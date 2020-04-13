@@ -22,14 +22,15 @@ function useData() {
         <>
                 <div>{data.map(item => {
                     console.log(item);
-                return<ol key={item.id}>
-                   <li>{item.city}</li>L
-                   <li>{item.name}</li>
-                    <li>{item.desription}</li>
+                return
+                    <ol key={item.id}>
+                        <li>{item.city}</li>L
+                <li>{item.name}</li>
+                <li>{item.desription}</li>
                 </ol>
                 })} </div>
         </>
             )}
 
 
-            export default GetData
+            export default useData

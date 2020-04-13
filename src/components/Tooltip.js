@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {HashRouter, NavLink} from "react-router-dom";
+import {HashRouter, NavLink, useParams} from "react-router-dom";
 
 export default class Tooltip extends Component {
 
