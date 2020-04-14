@@ -22,7 +22,7 @@ export default class Map extends Component {
             <LeafletMap
                 style={{height: "700px", width: "90%"}}
                 center={[centerL, centerH]}
-                zoom={13}
+                zoom={12}
                 maxZoom={20}
             >
                 <TileLayer

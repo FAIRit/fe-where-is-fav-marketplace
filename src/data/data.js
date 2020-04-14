@@ -68,45 +68,11 @@ export default [
         ]
     },
     {
-        city: "WARSZAWA",
-        name: 'MOKOTOW',
-        markets: [
+            city: "WARSZAWA",
+            name: 'PRAGA',
+            markets: [
             {
                 id: 5,
-                name: 'BAZAR LOTNIKÓW',
-                adres: 'Lokalizacja: Aleja Lotników 1',
-                haslo: 'KRAMARSTWO NA SŁUŻEWIE',
-                lalt: '52.1731631',
-                halt: '21.016906',
-                desription: 'Zagłębie straganów po dwóch stronach skrzyżowania Al. Lotników i Puławskiej to wspomnienie lat 90 pełnych blachy falistej.',
-                toBuy: 'Poza stałym bazarowym repertuarem bazar dorobił się kilka street-foodowych klasyków, warto spróbować latynoskich kanapek w El Czori oraz syryjskich mezze w Falafelnii.' +
-                    " ahhhh Pamiętaj o zabraniu własnej torby !" ,
-                transport: 'Autobusy -117, 141, 186, 189, 193, 312, 319, 401, 504, 505, 709, 727, Tramwaje - 4, 19, 33 - Przystanek Al.Lotników',
-                images: []
-
-            },
-            {
-                id: 6,
-                name: 'BAZAR OKULSKA',
-                adres: 'Lokalizacja: Okulska 12',
-                haslo: 'O WARSZTACIE, KTÓRY STAŁ SIĘ TRENDY',
-                lalt: '52.199203',
-                halt: '21.0195897',
-                desription: 'Miejsce wyrosłe z zamiłowania do pełnowartościowych, ekologicznych produktów. Powstałe po warsztacie samochodowym wpisało się w krajobraz Starego Mokotowa.',
-                toBuy: 'Na Olkuskiej znajdziemy całą gamę produktów od lokalnych producentów od rzeźnika po bezglutenowe wypieki. Dla głodnych czeka również klimatyczne bistro.' +
-                    " ahhhh Pamiętaj o zabraniu własnej torby !" ,
-                transport: 'tramwaje - 4, 10, 14, 15, 18, 35 Autobusy - 141, 172, 222 Przystanek Park Dreszera',
-                images: []
-
-            }
-        ]
-    },
-    {
-        city: "WARSZAWA",
-        name: 'PRAGA',
-        markets: [
-            {
-                id: 7,
                 name: 'BAZAR RÓŻYCKIEGO',
                 adres: 'Lokalizacja: ul. Targowa 54',
                 haslo: 'LEGENDA PRASKIEJ ULICY',
@@ -120,7 +86,7 @@ export default [
 
             },
             {
-                id: 8,
+                id: 6,
                 name: 'BAZAR SZEMBEKA',
                 adres: 'Lokalizacja: ul. Zamieniecka 88',
                 haslo: 'NAJBARDZIEJ JARMARCZNE CENTRUM ŻYCIA',
@@ -134,5 +100,86 @@ export default [
 
             }
         ]
+    },
+    {
+        city: "TROJMIASTO",
+        name: 'GDYNIA',
+        markets: [
+            {
+                id: 7,
+                name: 'HALE TARGOWE W GDYNI',
+                adres: 'Lokalizacja: ul.Wójta Radtkego 36/40',
+                haslo: 'RYBNA HISTORIA TUTAJ MA SWÓJ POCZĄTEK',
+                lalt: '54.5223953',
+                halt: '18.5324053',
+                desription: 'Hale Targowe w Gdyni to miejsce tętniące życiem, pełne kolorytu i energii, gdzie historia i tradycje stykają się z nowymi trendami.To miejsce, gdzie wyjątkowy duch kupiectwa unosi się nieprzerwanie od 80 lat.',
+                toBuy: 'Poza targowiskami owocowo-warzywnymi, znajdziemy tu najświeższe ryby pochodzące zarówno z Bałtyku, jak i z okolicznych akwenów słodkowodnych. ahhhh Pamiętaj o zabraniu własnej torby!' ,
+                transport: 'Hala mieści się przy Dworcu Gdynia Główna, najłatwiej wsiąść w SKM',
+                images: []
+
+            }
+        ]
+    },
+    {
+        city: "TROJMIASTO",
+        name: 'SOPOT',
+        markets: [
+            {
+                id: 8,
+                name: 'JADŁOSTAJNIA Kolibki',
+                adres: 'Lokalizacja: Al. Zwycięstwa 291',
+                haslo: 'REGIONALNI DOSTAWCY POD CHMURKĄ',
+                lalt: '54.4732051',
+                halt: '18.553642',
+                desription: 'Stajnia zlokalizowana w zabytkowym Parku Kolibki vis a vis Centrum Handlowego KLIF w Gdyni Orłowie, miejsce przez lata znane głównie adeptom jazdy konnej, wraca do życia w zupełnie nowej odsłonie.',
+                toBuy: 'Ekologiczne produkty od regionalnych dostawców i gospodarstw, własnoręcznie robione przetwory oraz sery zagrodowe.  ahhhh Pamiętaj o zabraniu własnej torby !',
+                transport: 'spacerkiem ze stacji SKM Sopot Kamienny Potok lub Gdynia Orłowo, autobus linia S',
+                images: []
+            },
+            {
+                id: 9,
+                name: 'SOPOCKI RYNEK',
+                adres: 'Lokalizacja: ul. Polna 8-12',
+                haslo: 'LOKALNI DOSTAWCY W CENTRUM SOPOTU',
+                lalt: '54.4309088',
+                halt: '18.564233',
+                desription: '"Największy w Sopocie wybór towarów po atrakcyjnych cenach, dni targowe: wtorek, piątek i sobota w godzinach 6:00-14:00.',
+                toBuy: 'Sopocki Rynek ma już ponad 100 stoisk. Można na nich kupić świeże owoce i warzywa z ekologicznych upraw, mięso i wędliny przygotowane metodami tradycyjnymi, artykuły sezonowe: grzyby, jagody, jak również świeże i wędzone ryby oraz domowe przetwory i produkty ECO.  ahhhh Pamiętaj o zabraniu własnej torby !',
+                transport: 'SKM/PKP do stacji Sopot Wyścigi; autobusy z Sopotu: 185, 144, 143, 117, 122; z Oliwy: 117, 143, 122',
+                images: []
+            }
+        ]
+    },
+    {
+        city: "TROJMIASTO",
+        name: 'GDANSK',
+        markets: [
+            {
+                id: 10,
+                name: 'ZIELONY RYNEK',
+                adres: 'Lokalizacja: ul. Czerwony Dwór 33',
+                haslo: 'NAJWIĘKSZY Z TRÓJMIEJSKICH TAGROWISK',
+                lalt: '54.4120799',
+                halt: '18.5836289',
+                desription: 'Początki targowiska sięgają 1981 roku, od kiedy to ówczesny plac parkingowy, na którym wyznaczono 10 stanowisk samochodowych dla producentów rolnych, przerodził się w targowisko tętniące życiem przez wszystkie dni tygodnia z około 500 stanowiskami handlowymi ze wszystkich branż.',
+                toBuy: 'Na targowisku znajdziesz wszystko czego potrzebujesz! ahhhh Pamiętaj o zabraniu własnej torby!',
+                transport: 'autobus 199, tramwaj 2 i 8',
+                images: []
+            },
+            {
+                id: 11,
+                name: 'GDAŃSKI BAZAR NATURY',
+                adres: 'Lokalizacja: Juliusza Słowackiego 19A',
+                haslo: 'NAJWIĘKSZY W TRÓJMIEŚCIE BAZAR Z EKOLOGICZNĄ ŻYWNOŚCIĄ',
+                lalt: '54.3760561',
+                halt: '18.5971777',
+                desription: 'Wiele Bazarów jeden Bazar Natury! Bazar z ekologiczną i regionalną żywnością odbywający się w Garnizonie Kultury w każdy Wtorek, Czwartek 11-18 oraz Sobotę 9-15',
+                toBuy: 'Jeśli poszukujesz źródła naturalnej, zdrowej, regionalnej oraz ekologicznej żywności lepiej trafić nie mogliście, ahhhh Pamiętaj o zabraniu własnej torby !',
+                transport: 'autobus 122, 199; tramwaj 6,9,12; PKP Gdańsk Wrzeszcz',
+                images: []
+            }
+        ]
     }
-] 
+]
+
+

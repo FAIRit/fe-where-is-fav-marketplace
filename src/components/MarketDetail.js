@@ -14,7 +14,7 @@ function useData(id) {
     return data;
 }
 
-function Test() {
+function MarketDetail() {
 
     const {id} = useParams();
     const data = useData(id);
@@ -46,4 +46,4 @@ function Test() {
 }
 
 
-export default Test
+export default MarketDetail
