@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {HashRouter, NavLink, useParams} from "react-router-dom";
+import {HashRouter, NavLink} from "react-router-dom";
 
 export default class Tooltip extends Component {
 
@@ -8,7 +8,7 @@ export default class Tooltip extends Component {
         const {market, blockName, city} = this.props;
 
         const activeStyle = {
-            color: "#11248d",
+            color: "black",
             fontSize: "14px"
         };
 
