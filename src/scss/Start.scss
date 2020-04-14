@@ -13,13 +13,19 @@
 .name-bar {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   background-color: $dark_green;
+  width: 100%;
+  text-align: center;
 
   h1 {
     font-size: 40px;
     align-self: center;
-    margin-top: 15px;
-    margin-bottom: 40px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  h4 {
+    margin-bottom: 10px;
   }
 }
 

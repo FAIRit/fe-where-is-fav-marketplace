@@ -1,3 +1,4 @@
+
 export default [
 
     {
@@ -29,7 +30,7 @@ export default [
                 toBuy: 'Bardzo dobra selekcja sezonowych warzyw od okolicznych gospodarzy - warto kupować na stoiskach na zewnątrz. Zakupy można uzupełnić w charakterystycznym supersamie z kangurem w logo.' +
                     " ahhhh Pamiętaj o zabraniu własnej torby !" ,
                 transport: "",
-                images: []
+                images: 'photo'
 
             }
         ]
@@ -49,7 +50,7 @@ export default [
                 toBuy: 'Szukając nieszablonowych warzyw czy w obliczu braku innego, specyficznego składnika potrawy z pomocą przychodzi pan Darek ze stoiska nr. 17. Istna kopalnia aromatów i smaków. Szukajcie też twarogu z Płońska przy stoisku nr. 61.' +
                     " ahhhh Pamiętaj o zabraniu własnej torby !" ,
                 transport: 'tramwaje 16, 17, 19, 33, 47, autobusy - 148 - przystanek Hala Mirowska',
-                images: []
+                images: ""
 
             },
             {
