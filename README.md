@@ -1,5 +1,6 @@
 ### This project is a mobile app that will bring you closer to choosing your favorite and environmentally friendly marketplace and all without using plastic bags!
 #### Currently contains information about Warsaw and Tricity marketplaces. In the application you can locate the nearest market on the map. I use the [React-Leaflet](https://react-leaflet.js.org/) library for this.
+#### Here are also my project in [firebase](https://console.firebase.google.com/u/2/project/detailsmarket-52617/database/firestore/data~2Fwarszawa~2F1). Please feel invited to visit the site. 
 
 > Here's a little teaser of how it looks:
 >
