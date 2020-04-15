@@ -1,8 +1,9 @@
 import React, {Component} from "react";
-import {Map as LeafletMap, TileLayer, Marker, Popup} from 'react-leaflet';
+import {Map as LeafletMap, TileLayer, Marker, Popup, ZoomControl, withLeaflet } from 'react-leaflet';
 import Tooltip from "./Tooltip";
 import L from 'leaflet'
 import flower from "../assets/parsley.svg";
+import GeoSearch from "./SearchingMap";
 
 export const pointerIcon = new L.Icon({
     iconUrl: flower,
@@ -35,6 +36,7 @@ export default class Map extends Component {
                         </Popup>
                     </Marker>
                 )}
+                <GeoSearch />
             </LeafletMap>
         );
     }
