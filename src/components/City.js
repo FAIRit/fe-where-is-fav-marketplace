@@ -1,11 +1,9 @@
 import React, {Component} from "react";
-import {HashRouter, NavLink} from "react-router-dom";
+import {HashRouter, NavLink, useParams} from "react-router-dom";
 
+function City() {
 
-class City extends Component {
-
-    render() {
-        const city = this.props.match.params.city
+        const {city} = useParams();
         console.log(city);
 
         if (city === "trojmiasto") {
@@ -47,7 +45,6 @@ class City extends Component {
             </div>
 
         )
-    }
 }
 
 export default City

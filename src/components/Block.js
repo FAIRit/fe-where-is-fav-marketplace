@@ -4,6 +4,7 @@ import Header from "./Header";
 
 
 export default class Block extends Component {
+
     render() {
         const {blocks} = this.props;
         const {name, city} = this.props.match.params;

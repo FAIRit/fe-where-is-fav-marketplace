@@ -8,7 +8,7 @@ export default class Tooltip extends Component {
         const {market, blockName, city} = this.props;
 
         const activeStyle = {
-            color: "#11248d",
+            color: "black",
             fontSize: "14px"
         };
 

@@ -4,7 +4,7 @@
 
 .tooltip-name {
   font-family: 'Bebas Neue', cursive;
-  color: #204969;
+  color: $dark_green;
   font-size: 20px;
 }
 
@@ -15,7 +15,7 @@
 
 .tooltip-name {
   font-family: $text_font;
-  color: $neon_green;
+  color: $dark_green;
   font-size: 25px;
 }
 
@@ -23,13 +23,13 @@
   color: $neon_green;
   font-family: $text_font;
   font-size: 20px;
-  font-weight: lighter;
+  //font-weight: lighter;
 }
 
 .tooltip-address {
   font-family: $text_font;
   font-size: 20px;
   font-weight: lighter;
-  color: #11248d;
+  color: $dark_green;
 }
 

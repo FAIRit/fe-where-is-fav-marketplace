@@ -1,8 +1,6 @@
-import React, {Component} from "react";
+import React, { Component} from "react";
 
 // const imageUrl = "images/peter-wendt--r5KSMkyoSc-unsplash.jpg";
-
-
 
 export default class Details extends Component {
 
@@ -18,9 +16,7 @@ export default class Details extends Component {
         const {blocks} = this.props;
         const {name, id} = this.props.match.params;
         const block = blocks.find(block => block.name.toLowerCase() === name.toLowerCase());
-        const marketDetails = block.markets.find(market => market.id.toString() === id);
-
-
+        const marketDetails = block.markets.find(market => market.id.toString() === id)
 
         return (
             <>
@@ -29,6 +25,7 @@ export default class Details extends Component {
                         <h1 className="name-market">{marketDetails.name}</h1>
                         <button className="BackButton"
                                 onClick={this.navigateToBlock.bind(this, block)}>X</button>
+
                     </div>
                     <h4 className="haslo-market">{marketDetails.haslo}</h4>
 
