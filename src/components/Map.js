@@ -1,8 +1,9 @@
 import React, {Component} from "react";
-import {Map as LeafletMap, TileLayer, Marker, Popup} from 'react-leaflet';
+import {Map as LeafletMap, TileLayer, Marker, Popup, ZoomControl, withLeaflet } from 'react-leaflet';
 import Tooltip from "./Tooltip";
 import L from 'leaflet'
 import flower from "../assets/parsley.svg";
+import GeoSearch from "./SearchingMap";
 
 export const pointerIcon = new L.Icon({
     iconUrl: flower,
@@ -17,8 +18,6 @@ export default class Map extends Component {
         const centerH = block.markets.reduce((p, c) => p + parseFloat(c.halt), 0) / block.markets.length;
 
         return (
-
-
             <LeafletMap
                 style={{height: "700px", width: "90%"}}
                 center={[centerL, centerH]}
@@ -37,6 +36,7 @@ export default class Map extends Component {
                         </Popup>
                     </Marker>
                 )}
+                <GeoSearch />
             </LeafletMap>
         );
     }
